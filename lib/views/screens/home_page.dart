@@ -17,8 +17,46 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      drawer: Drawer(
+        backgroundColor: Colors.white,
+        child: Column(
+          children: [
+            const UserAccountsDrawerHeader(
+              accountEmail: Text('lathiyavinisha03@gmail.com'),
+              accountName: Text('Vinisha Lathiya'),
+              currentAccountPicture: CircleAvatar(),
+            ),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: List.generate(
+                    allFoods.length,
+                    (index) => Card(
+                      color: Colors.primaries[index % 18].withOpacity(0.2),
+                      child: ListTile(
+                        onTap: () {
+                          Navigator.of(context).pushNamed(MyRoutes.detailPage,
+                              arguments: allFoods[index]);
+                        },
+                        leading: CircleAvatar(
+                          backgroundImage:
+                              NetworkImage(allFoods[index]['thumb']),
+                        ),
+                        title: Text(allFoods[index]['name']),
+                        subtitle: Text(allFoods[index]['time']),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+
+        // List.generate(allFoods.length, (index) => Text(allFoods[index][name]),),
+      ),
       appBar: AppBar(
-        leading: const Icon(Icons.menu_open),
         title: const Text(
           'Home',
           style: TextStyle(

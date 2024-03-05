@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(useMaterial3: true),
       initialRoute: 'home_page',
       routes: {
-        MyRoutes.HomePage: (context) => HomePage(),
-        MyRoutes.detailPage: (context) => DetailPage(),
-        MyRoutes.dietPage: (context) => DietPage(),
+        MyRoutes.HomePage: (context) => const HomePage(),
+        MyRoutes.detailPage: (context) => const DetailPage(),
+        MyRoutes.dietPage: (context) => const DietPage(),
       },
     );
   }

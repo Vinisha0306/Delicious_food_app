@@ -21,7 +21,7 @@ class _DetailPageState extends State<DetailPage> {
       appBar: AppBar(
         title: Text(
           data['name'],
-          style: TextStyle(
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -30,7 +30,7 @@ class _DetailPageState extends State<DetailPage> {
             onTap: () {
               Navigator.of(context).pushNamed(MyRoutes.dietPage);
             },
-            child: Container(
+            child: SizedBox(
               height: size.height * 0.07,
               width: size.width * 0.07,
               child: const Image(
@@ -44,7 +44,7 @@ class _DetailPageState extends State<DetailPage> {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -61,13 +61,13 @@ class _DetailPageState extends State<DetailPage> {
             diet.remove(data);
             snackBar = SnackBar(
                 content: Text("${data['name']} remove from the CART !!"),
-                backgroundColor: Colors.red,
+                backgroundColor: Colors.red.withOpacity(0.7),
                 behavior: SnackBarBehavior.floating);
           } else {
             diet.add(data);
             snackBar = SnackBar(
                 content: Text("${data['name']} remove from the CART !!"),
-                backgroundColor: Colors.green,
+                backgroundColor: Colors.green.withOpacity(0.7),
                 behavior: SnackBarBehavior.floating);
           }
           ScaffoldMessenger.of(context).showSnackBar(snackBar);

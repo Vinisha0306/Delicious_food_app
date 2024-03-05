@@ -30,6 +30,7 @@ class _DietPageState extends State<DietPage> {
     }).toList();
   }
 
+  int p = 1;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -53,7 +54,7 @@ class _DietPageState extends State<DietPage> {
                   children: List.generate(
                     diet.length,
                     (index) => diet_page_details(
-                        context: context, size: size, index: index),
+                        context: context, size: size, index: index, p: p),
                   ),
                 ),
               ),
@@ -87,19 +88,19 @@ class _DietPageState extends State<DietPage> {
                     ),
                     Text(
                       "\tCalories : $calouris",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                     Text(
                       "\tCarbos : $carbos",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                     Text(
                       "\tFats : $fats",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                     Text(
                       "\tProteins : $proteins",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),

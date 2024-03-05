@@ -26,25 +26,28 @@ Widget all_product({required context, required size, required index}) {
       child: Row(
         children: [
           Expanded(
-            child: Container(
-              height: size.height * 0.5,
-              width: size.width * 0.4,
-              margin: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                shape: BoxShape.circle,
-                boxShadow: const [
-                  BoxShadow(
-                    color: Colors.grey,
-                    blurRadius: 5,
-                    offset: Offset(5, 5),
+            child: Hero(
+              tag: allFoods[index]['name'],
+              child: Container(
+                height: size.height * 0.5,
+                width: size.width * 0.4,
+                margin: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Colors.grey,
+                      blurRadius: 5,
+                      offset: Offset(5, 5),
+                    ),
+                  ],
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      allFoods[index]['thumb'],
+                    ),
+                    fit: BoxFit.cover,
                   ),
-                ],
-                image: DecorationImage(
-                  image: NetworkImage(
-                    allFoods[index]['thumb'],
-                  ),
-                  fit: BoxFit.cover,
                 ),
               ),
             ),
