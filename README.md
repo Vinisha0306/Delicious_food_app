@@ -30,7 +30,12 @@ Your Ultimate Food Companion
 - Make informed decisions and discover new culinary delights with confidence.
 
 ## OutPut:
-
-
+<img src="https://github.com/Vinisha0306/delicious_food_app/assets/143987696/1bd5146e-5f8a-4c9f-88b0-5c1d6f523c2e" width="250" height="550">
+<img src="https://github.com/Vinisha0306/delicious_food_app/assets/143987696/cf6572c0-8f73-4335-914e-4946afda162e" width="250" height="550">
+<img src="https://github.com/Vinisha0306/delicious_food_app/assets/143987696/4c4988bc-48b8-4a0c-9595-d194addeee0e" width="250" height="550">
+<img src="https://github.com/Vinisha0306/delicious_food_app/assets/143987696/45e0eaad-08cd-47e2-8459-176199f7b4d1" width="250" height="550">
+<img src="https://github.com/Vinisha0306/delicious_food_app/assets/143987696/824de6be-56a6-4135-ab49-acae48fd6e70" width="250" height="550">
+<img src="https://github.com/Vinisha0306/delicious_food_app/assets/143987696/c2bcd337-89b8-4f67-adcf-2bb9a2529e85" width="250" height="550">
+<img src="https://github.com/Vinisha0306/delicious_food_app/assets/143987696/3af8eea1-d17d-4362-9a53-73dc0e77634a" width="250" height="550">
 
 TastyBites is more than just a food app; it's a gateway to culinary bliss. Download now and embark on a flavorful journey that will delight your senses and satisfy your appetite like never before. Bon appétit!
