@@ -5,7 +5,6 @@ Your Ultimate Food Companion
 
 ## Features:
 
-<<<<<<< HEAD
 ### Browse and Discover:
 - Explore a vast array of delectable dishes from top-rated restaurants, food trucks, and home chefs in your area.
 - From savory entrees to decadent desserts, TastyBites offers a diverse selection to satisfy every craving.
