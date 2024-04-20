@@ -41,4 +41,5 @@ Your Ultimate Food Companion
 ## Video
 
 https://github.com/Vinisha0306/delicious_food_app/assets/143987696/57420074-bc64-4842-9f97-ca593580d3a9
+
 TastyBites is more than just a food app; it's a gateway to culinary bliss. Download now and embark on a flavorful journey that will delight your senses and satisfy your appetite like never before. Bon appétit!
